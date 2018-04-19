@@ -1,0 +1,70 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Roboto;
+  padding: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+.month{
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+}
+
+.month a{
+  text-decoration: none;
+}
+.nameMonth{
+  
+}
+
+
+.room{
+  border: 1px solid #e5e5e5;
+  margin: 10px;
+}
+
+.room:hover{
+  background-color: #fff;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.days{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px; 
+}
+
+.timeReserve{
+  display: flex;
+  justify-content: space-between;
+}
+.nameRoom{
+  display: flex;
+  flex-direction: column;
+}
+.time table {
+  background-color: #e0e0e0;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-spacing: 25px 3px;
+}
+
+td a{
+  text-decoration: none;
+}
+
+
+tr td:hover{  
+  background-color: #fff;
+  transition: 0.2s;
+  cursor: pointer;
+}
+  
