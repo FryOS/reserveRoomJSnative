@@ -1,0 +1,7 @@
+.time , .room{
+  display: flex;
+  
+}
+.time ul {
+  list-style: none;
+}

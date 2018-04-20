@@ -1,586 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <title>Reserv Room</title>
-</head>
-<body>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3"><h1>Комната</h1></div>
-        <div class="col-lg-9">
-          <div class="month">
-            <a href="#">Назад</a>
-            <span class="nameMonth">Июль</span>
-            <a href="#">Вперед</a>
-          </div>
-          <div class="days">
-            <div class="day">10 Понедельник</div>
-            <div class="day">11 Понедельник</div>
-            <div class="day">12 Понедельник</div>
-            <div class="day">13 Понедельник</div>
-            <div class="day">14 Понедельник</div>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <title>Reserv Room</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row blockDate">
+          <div class="col-sm-2">Комната</div>
+          <div class="col-sm-10">
+            <div class="month">
+              <a id="back" href="#">Назад</a>
+              <h4 id="month"></h4>
+              <a id="next" href="#">Вперед</a>
+            </div>
+            <div class="row">
+              <div class="col day"><span>10 Понедельник</span></div>
+              <div class="col day"><span>11 Понедельник</span></div>
+              <div class="col day"><span>12 Понедельник</span></div>
+              <div class="col day"><span>13 Понедельник</span></div>
+              <div class="col day"><span>14 Понедельник</span></div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Блок Дата -->
+        <!-- blockDate  -->
+        <div class="row blockRoom">
+          <div class="col-sm-2"><span>Зеленая <br>(До 5 персон)</span></div>
+          <div class="col-sm-2">
+            <div class="time">
+              <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+              </ul>
+              <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="time">
+              <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+              </ul>
+              <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="time">
+              <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+              </ul>
+              <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="time">
+              <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+              </ul>
+              <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="time">
+              <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+              </ul>
+              <ul>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Блок Room -->
+      </section>
 
-      <div class="container room">
-        <div class="row ">
-          <div class="col-lg-3">
-            <div class="nameRoom">
-              <h1>Черная</h1>
-              <span>(до 5 персон)</span>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="timeReserve">
-              <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#"><span>01</span></a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-            </div>
-          </div>      
-        </div>
-      </div>
-      <!-- Блок переговорка 1 -->
-      <div class="container room">
-        <div class="row ">
-          <div class="col-lg-3">
-            <div class="nameRoom">
-              <h1>Красная</h1>
-              <span>(до 10 персон)</span>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="timeReserve">
-              <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#"><span>01</span></a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-            </div>
-          </div>      
-        </div>
-      </div>
-      <!-- Блок переговорка 1 -->
-      <div class="container room">
-        <div class="row ">
-          <div class="col-lg-3">
-            <div class="nameRoom">
-              <h1>Красная</h1>
-              <span>(до 15 персон)</span>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="timeReserve">
-              <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#"><span>01</span></a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-            </div>
-          </div>      
-        </div>
-      </div>
-      <!-- Блок переговорка 1 -->
-      <div class="container room">
-        <div class="row ">
-          <div class="col-lg-3">
-            <div class="nameRoom">
-              <h1>Голубая</h1>
-              <span>(до 25 персон)</span>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <div class="timeReserve">
-              <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#"><span>01</span></a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-               <div class="time">
-                <table>
-                  <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr>
-                   <tr>
-                     <td><a href="#">01</a></td>
-                     <td><a href="#">01</a></td>
-                   </tr> 
-                </table>
-              </div>
-            </div>
-          </div>      
-        </div>
-      </div>
-      <!-- Блок переговорка 1 -->    
 
-    </div>
-  </section>
-  <!-- Секция Переговорок -->
-
-  <section>
-    <div class="container">
-      <div class="row">
-        
-      </div>
-    </div>
-  </section>
-
-</body>
-</html>
+    <script src="js/app.js"></script>
+    </body>
+  </html>

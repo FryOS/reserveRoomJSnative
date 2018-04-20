@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,63 +9,35 @@ body {
   padding: 40px;
   margin: 0 auto;
   box-sizing: border-box;
-
 }
+
 .month{
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
-  background-color: #e0e0e0;
+  align-items: center;
+  background-color: #ccc;
+
+}
+.blockRoom{
+  border: 1px solid #ccc;
+}
+.blockRoom .time {
+  background-color: #ccc;
 }
 
-.month a{
-  text-decoration: none;
+.blockRoom ul{
+  text-align: center;
 }
-.nameMonth{
+
+.time {
+  display: flex;
   
 }
-
-
-.room{
-  border: 1px solid #e5e5e5;
-  margin: 10px;
+.time ul {
+  list-style: none;
 }
 
-.room:hover{
-  background-color: #fff;
-  transition: 0.2s;
-  cursor: pointer;
+.day{  
+  text-align: center;
 }
-
-.days{
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
-  padding-top: 10px; 
-}
-
-.timeReserve{
-  display: flex;
-  justify-content: space-between;
-}
-.nameRoom{
-  display: flex;
-  flex-direction: column;
-}
-.time table {
-  background-color: #e0e0e0;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-spacing: 25px 3px;
-}
-
-td a{
-  text-decoration: none;
-}
-
-
-tr td:hover{  
-  background-color: #fff;
-  transition: 0.2s;
-  cursor: pointer;
-}
-  
