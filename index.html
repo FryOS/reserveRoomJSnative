@@ -1,130 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="caleandar-master/css/theme1.css">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Reserv Room</title>
-  </head>
-  <body>
-    <section>
-      <div class="container">
+</head>
+<body>
+
+
+<div id="caleandar">
+</div>
+
+<div class="createMeetingButton">
+    <a href="#" id="createMeetingButton">Создать встречу</a>
+</div>
+<section>
+    <div class="container">
         <div class="row blockDate">
-          <div class="col-sm-2">Комната</div>
-          <div class="col-sm-10">
-            <div class="month">
-              <a id="back" href="#">Назад</a>
-              <h4 id="month"></h4>
-              <a id="next" href="#">Вперед</a>
+            <div class="col-sm-2">Комната</div>
+            <div class="col-sm-10">
+                <div id="month" class="month">
+                    <a id="back" href="#">Назад</a>
+                    <h4 id="nameMonth"></h4>
+                    <a id="next" href="#">Вперед</a>
+                </div>
+                <div class="row">
+                    <div class="col day"><span>10 Понедельник</span></div>
+                    <div class="col day"><span>11 Понедельник</span></div>
+                    <div class="col day"><span>12 Понедельник</span></div>
+                    <div class="col day"><span>13 Понедельник</span></div>
+                    <div class="col day"><span>14 Понедельник</span></div>
+                </div>
             </div>
-            <div class="row">
-              <div class="col day"><span>10 Понедельник</span></div>
-              <div class="col day"><span>11 Понедельник</span></div>
-              <div class="col day"><span>12 Понедельник</span></div>
-              <div class="col day"><span>13 Понедельник</span></div>
-              <div class="col day"><span>14 Понедельник</span></div>
-            </div>
-          </div>
         </div>
         <!-- blockDate  -->
-        <div class="row blockRoom">
-          <div class="col-sm-2"><span>Зеленая <br>(До 5 персон)</span></div>
-          <div class="col-sm-2">
-            <div class="time">
-              <ul>
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-                <li>04</li>
-                <li>05</li>
-              </ul>
-              <ul>
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-                <li>04</li>
-                <li>05</li>
-              </ul>
+        <div class="row blockRoom" id="timeForReserve">
+            <div class="col-sm-2"><span>Зеленая <br>(До 5 персон)</span></div>
+            <div class="col-sm-2">
+                <div  class="time">
+                    <ul>
+                        <li><a href="#">09:00</a></li>
+                        <li>10:00</li>
+                        <li>11:00</li>
+                        <li>12:00</li>
+                        <li>13:00</li>
+                    </ul>
+                    <ul>
+                        <li>14:00</li>
+                        <li>15:00</li>
+                        <li>16:00</li>
+                        <li>17:00</li>
+                        <li>18:00</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="time">
-              <ul>
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-                <li>04</li>
-                <li>05</li>
-              </ul>
-              <ul>
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-                <li>04</li>
-                <li>05</li>
-              </ul>
+            <div class="col-sm-2">
+                <div class="time">
+                    <ul>
+                        <li>09:00</li>
+                        <li>10:00</li>
+                        <li>11:00</li>
+                        <li>12:00</li>
+                        <li>13:00</li>
+                    </ul>
+                    <ul>
+                        <li>14:00</li>
+                        <li>15:00</li>
+                        <li>16:00</li>
+                        <li>17:00</li>
+                        <li>18:00</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="time">
-              <ul>
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-                <li>04</li>
-                <li>05</li>
-              </ul>
-              <ul>
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-                <li>04</li>
-                <li>05</li>
-              </ul>
+            <div class="col-sm-2">
+                <div class="time">
+                    <ul>
+                        <li>09:00</li>
+                        <li>10:00</li>
+                        <li>11:00</li>
+                        <li>12:00</li>
+                        <li>13:00</li>
+                    </ul>
+                    <ul>
+                        <li>14:00</li>
+                        <li>15:00</li>
+                        <li>16:00</li>
+                        <li>17:00</li>
+                        <li>18:00</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="time">
-              <ul>
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-                <li>04</li>
-                <li>05</li>
-              </ul>
-              <ul>
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-                <li>04</li>
-                <li>05</li>
-              </ul>
+            <div class="col-sm-2">
+                <div class="time">
+                    <ul>
+                        <li>09:00</li>
+                        <li>10:00</li>
+                        <li>11:00</li>
+                        <li>12:00</li>
+                        <li>13:00</li>
+                    </ul>
+                    <ul>
+                        <li>14:00</li>
+                        <li>15:00</li>
+                        <li>16:00</li>
+                        <li>17:00</li>
+                        <li>18:00</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="time">
-              <ul>
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-                <li>04</li>
-                <li>05</li>
-              </ul>
-              <ul>
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-                <li>04</li>
-                <li>05</li>
-              </ul>
+            <div class="col-sm-2">
+                <div class="time">
+                    <ul>
+                        <li>09:00</li>
+                        <li>10:00</li>
+                        <li>11:00</li>
+                        <li>12:00</li>
+                        <li>13:00</li>
+                    </ul>
+                    <ul>
+                        <li>14:00</li>
+                        <li>15:00</li>
+                        <li>16:00</li>
+                        <li>17:00</li>
+                        <li>18:00</li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
         <!-- Блок Room -->
-      </section>
+</section>
 
 
-    <script src="js/app.js"></script>
-    </body>
-  </html>
+<div id="createMeeting" class="createMeeting">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col">
+                        <h4>Тема</h4>
+                        <input type="text" placeholder="О чем разговор"></div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4>Участники</h4>
+                        <input type="text" placeholder="Например, Петр Первый"></div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col">
+                        <h4>Дата</h4>
+                        <input type="date"></div>
+                    <div class="col">
+                        <h4>Начало</h4>
+                        <input type="time"></div>
+                    <div class="col">
+                        <h4>Конец</h4>
+                        <input type="time"></div>
+                </div>
+                <div class="row">
+                    <div>16:00-16:30 Зеленая переговорка <span>X</span></div>
+                </div>
+                <div class="row">
+                    <div>16:00-16:30 Красная переговорка <span>X</span></div>
+                </div>
+                <div class="row">
+                    <div>16:00-16:30 Синяя переговорка <span>X</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col offset-3">
+                <a id="cancelButton" href="#">Отмена</a>
+                <a id="createMetingButtonInModal" href="#">Создать встречу</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="congratWindow" class="congratWindow">
+    <div class="container">
+        <div class="row align-items-center parent-row">
+            <div class="col offset-4">
+
+                    <img src="" alt="тут картинка">
+                    <div class="d-flex flex-column">
+                        <h3>Встреча создана</h3>
+                        <span>14 декабря 2018</span>
+                        <span>Красная Переговорка</span>
+                        <a id="congratButtonGood" href="#">Хорошо</a>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="caleandar-master/js/caleandar.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
