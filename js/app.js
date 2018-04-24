@@ -93,13 +93,23 @@ function createSearch() {
         let obj = checkboxs[i];
         if (obj.checked) {
             search[obj.name] = true;
+
         }
     }
+
     return search;
 }
 
-addButton.addEventListener('submit', (event) => {
+
+addButton.addEventListener('click', (event) => {
     event.preventDefault();
     createSearch();
+    console.log('createSearch();', createSearch());
+    const c = findRoom(createSearch());
+    console.log(c);
 });
+
+
+
+
 

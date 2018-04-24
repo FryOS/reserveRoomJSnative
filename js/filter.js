@@ -3,7 +3,7 @@ const rooms = [{
     name: 'red',
     computer: true,
     table: true,
-    desk: false,
+    desk: true,
     tv: true,
     phone: true
 }, {id: 2,
@@ -30,10 +30,10 @@ const rooms = [{
 }];
 
 
-const search = {
-    table: true,
-    desk: true
-};
+// const search = {
+//     table: true,
+//     desk: true
+// };
 
 
 function findRoom(search) {
@@ -47,6 +47,6 @@ function findRoom(search) {
     return result;
 
 }
-const filterRoom = findRoom(search);
-console.assert(filterRoom.length === 1, 'ожидалась одна комната' );
-console.log(filterRoom);
+// const searchByFilterRoom = findRoom(search);
+// console.assert(searchByFilterRoom.length === 1, 'ожидалась одна комната' );
+// console.log(searchByFilterRoom);
