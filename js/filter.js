@@ -1,24 +1,32 @@
 const rooms = [{
     id: 1,
     name: 'red',
-    comp: true,
+    computer: true,
     table: true,
-    desk: false
+    desk: false,
+    tv: true,
+    phone: true
 }, {id: 2,
     name: 'green',
-    comp: false,
+    computer: false,
     table: true,
-    desk: false
+    desk: false,
+    tv: true,
+    phone: true
 }, {id: 3,
     name: 'blue',
-    comp: true,
+    computer: true,
     table: false,
-    desk: false
+    desk: false,
+    tv: true,
+    phone: true
 }, {id: 4,
     name: 'yellow',
-    comp: false,
+    computer: false,
     table: true,
-    desk: true
+    desk: true,
+    tv: true,
+    phone: true
 }];
 
 

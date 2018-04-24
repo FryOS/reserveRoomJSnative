@@ -10,7 +10,10 @@ const createMetingButtonInModal = document.querySelector('#createMetingButtonInM
 const congratWindow = document.querySelector('#congratWindow');
 const congratButtonGood = document.querySelector('#congratButtonGood');
 const timeForReserve = document.querySelector('#timeForReserve');
-const filterRoom = document.querySelector('#filterRoom');
+const filterRoom = document.querySelectorAll('#filterRoom input[type="checkbox"]');
+const addButton  = document.querySelector('#add')
+
+console.log(filterRoom);
 
 function hideElem(elem) {
     elem.style.display = "none";
@@ -83,8 +86,20 @@ var settings = {
 var element = document.getElementById('caleandar');
 caleandar(element, events, settings);
 
+function createSearch() {
+    const search = {};
+    let checkboxs = Array.from(filterRoom);
+    for (let i = 0; i < checkboxs.length; i++) {
+        let obj = checkboxs[i];
+        if (obj.checked) {
+            search[obj.name] = true;
+        }
+    }
+    return search;
+}
 
-console.log(filterRoom);
-filterRoom.addEventListener('submit', () => {
-   console.log(filterRoom);
+addButton.addEventListener('submit', (event) => {
+    event.preventDefault();
+    createSearch();
 });
+
