@@ -4,21 +4,21 @@
   (◠‿◠✿)
 */
 var Calendar = function(model, options, date){
-  // Default Values
-  this.Options = {
-    Color: '',
-    LinkColor: '',
-    NavShow: true,
-    NavVertical: false,
-    NavLocation: '',
-    DateTimeShow: true,
-    DateTimeFormat: 'mmm, yyyy',
-    DatetimeLocation: '',
-    EventClick: '',
-    EventTargetWholeDay: false,
-    DisabledDays: [],
-    ModelChange: model
-  };
+        // Default Values
+        this.Options = {
+            Color: '',
+            LinkColor: '',
+            NavShow: true,
+            NavVertical: false,
+            NavLocation: '',
+            DateTimeShow: true,
+            DateTimeFormat: 'mmm, yyyy',
+            DatetimeLocation: '',
+            EventClick: '',
+            EventTargetWholeDay: false,
+            DisabledDays: [],
+            ModelChange: model
+        };
   // Overwriting default values
   for(var key in options){
     this.Options[key] = typeof options[key]=='string'?options[key].toLowerCase():options[key];

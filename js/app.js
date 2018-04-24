@@ -10,6 +10,7 @@ const createMetingButtonInModal = document.querySelector('#createMetingButtonInM
 const congratWindow = document.querySelector('#congratWindow');
 const congratButtonGood = document.querySelector('#congratButtonGood');
 const timeForReserve = document.querySelector('#timeForReserve');
+const filterRoom = document.querySelector('#filterRoom');
 
 function hideElem(elem) {
     elem.style.display = "none";
@@ -81,3 +82,9 @@ var settings = {
 
 var element = document.getElementById('caleandar');
 caleandar(element, events, settings);
+
+
+console.log(filterRoom);
+filterRoom.addEventListener('submit', () => {
+   console.log(filterRoom);
+});
